@@ -2,7 +2,7 @@
   "name": "sky-remote-api",
   "version": "1.0.0",
   "description": "sky remote api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "Error no test specified"
   },
@@ -27,6 +27,9 @@
   "dependencies": {
     "express": "^4.16.2",
     "body-parser": "^1.14.2",
-    "sky-remote": "^1.0.2"
+    "sky-remote": "^1.0.2",
+	"sky-q": "^1.0.2",
+	"request": "^2.81.0",
+    "request-promise-native": "^1.0.3"
   }
 }
