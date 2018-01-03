@@ -5,6 +5,6 @@ RUN apk add --update git && \
 RUN git clone https://github.com/davidjtipping/sky-remote-api.git . && \
   npm install
 EXPOSE 3000
-CMD ["node","/sky-remote-web/sky-remote-api.js","--hostname=localhost","--port=3000","--net=host"]
+CMD ["node","/sky-remote-api/sky-remote-api.js","--hostname=localhost","--port=3000","--net=host"]
 
 
