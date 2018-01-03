@@ -1,0 +1,32 @@
+{
+  "name": "sky-remote-api",
+  "version": "1.0.0",
+  "description": "sky remote api",
+  "main": "index.js",
+  "scripts": {
+    "test": "Error no test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidjtipping/sky-remote-api.git"
+  },
+  "keywords": [
+    "sky",
+    "remote",
+    "api"
+  ],
+  "author": "davidjtipping",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/davidjtipping/sky-remote-api/issues"
+  },
+  "homepage": "https://github.com/davidjtipping/sky-remote-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.7"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.14.2",
+    "sky-remote": "^1.0.2"
+  }
+}
