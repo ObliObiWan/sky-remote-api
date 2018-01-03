@@ -5,3 +5,7 @@ Usage
 Just start the script, and then open a browser at http://localhost:3000/<ip address>/command
 Ensure the text box at the top of the page contains the IP address of your Sky box.
 Nothing more to it.
+
+Usage as per: https://github.com/dalhundal/sky-remote
+
+Credit to https://github.com/dalhundal/sky-remote for creating the base module.
