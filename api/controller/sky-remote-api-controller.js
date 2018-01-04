@@ -25,6 +25,13 @@ exports.send_a_command = function(req, res) {
                                         res.end('{"status":"ignored"}');
                                 }
 
+                        } else if (req.params.Command == "status") {
+                                if(isOn){
+                                        res.end('{"status":"on"}');
+                                }else{
+                                        res.end('{"status":"off"}');
+                                }
+
                         } else {
                                         remoteControl.press(req.params.Command,function() {
                                         res.end('{"status":"success"}');
