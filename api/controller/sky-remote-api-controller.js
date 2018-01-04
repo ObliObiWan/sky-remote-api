@@ -11,26 +11,27 @@ exports.send_a_command = function(req, res) {
                         if (req.params.Command == "on") {
                                 if(!isOn){
                                         remoteControl.press("power",function() {
-                                        res.end('OK');
+                                        res.end('{"status":"success"}');
                                         });
                                 }else{
-                                        res.end('BOX ON');
+                                        res.end('{"status":"ignored"}');
                                 }
                         } else if (req.params.Command == "off") {
                                 if(isOn){
                                         remoteControl.press("power",function() {
-                                        res.end('OK');
+                                        res.end('{"status":"success"}');
                                         });
                                 }else{
-                                        res.end('BOX OFF');
+                                        res.end('{"status":"ignored"}');
                                 }
 
                         } else {
                                         remoteControl.press(req.params.Command,function() {
-                                        res.end('OK');
+                                        res.end('{"status":"success"}');
                                         });
                         }
                 }).catch(err=>{
+						res.end('{"status":"error"}');
                         console.error("Unable to determine power state")
                         console.error("Perhaps looking at this error will help you figure out why", err)
                 })
