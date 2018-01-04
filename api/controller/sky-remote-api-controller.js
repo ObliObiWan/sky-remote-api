@@ -31,7 +31,6 @@ exports.send_a_command = function(req, res) {
                                 }else{
                                         res.end('{"status":"off"}');
                                 }
-
                         } else {
                                         remoteControl.press(req.params.Command,function() {
                                         res.end('{"status":"success"}');
