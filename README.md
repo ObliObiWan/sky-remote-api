@@ -8,7 +8,6 @@ Usage
 Just start the script, and then open a browser at http://localhost:3000/[ipaddress]/skyq/[command] or http://localhost:3000/[ipaddress]/skyhd/[command]
 
 Where [ipaddress] is the address of the sky box
-
 Where [command] is the command from the remote lists
 
 

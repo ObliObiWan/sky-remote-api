@@ -9,7 +9,7 @@ exports.send_a_command = function(req, res) {
 			var remoteControl = new SkyRemote(req.params.Server, SkyRemote.SKY_Q);
 		} else {
 			var remoteControl = new SkyRemote(req.params.Server);	
-		}
+		};
 
                 var box = new SkyQ({ip:req.params.Server})
                 box.getPowerState().then(isOn=>{
