@@ -10,6 +10,18 @@ Just start the script, and then open a browser at http://localhost:3000/[ipaddre
 Where [ipaddress] is the address of the sky box
 Where [command] is the command from the remote lists
 
+skyq targets port 5900 and skyhd targets port 49160.
+
+Most sky q boxes target port 5900 some starting Q060 use the old skyhd port.  
+
+status command will only work on skyq boxes
+
+Ports required
+3000 tcp
+5900 tcp
+49160 tcp
+9006 tcp
+
 
 Remote control commands
 sky power status on off
