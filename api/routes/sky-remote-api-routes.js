@@ -2,7 +2,7 @@
 module.exports = function(app) {
   var skyRemoteApi = require('../controller/sky-remote-api-controller');
 
-  // sky-remote-api Routes
-  app.route('/:Server/:Command')
+  // sky api route
+  app.route('/:Server/:Type/:Command')
     .get(skyRemoteApi.send_a_command)
 };
